@@ -1,0 +1,1030 @@
+@charset "utf-8";
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+	margin: 0; 
+    height: 400vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+#contenedor {
+	width: 90vw;
+	height: 400vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image:url("../img/contenedor.jpg");
+	
+
+}
+#grid{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 5vh  4fr 4fr 4fr 4fr 10vh;
+	
+}
+#grid header {
+    background-color: rgba(221,144,255,1.00);
+    grid-column: 1/3;
+    grid-row: 1/2;
+	background-image: url("../img/heder.jpg");
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+.wrapper   {
+    height: 100%;
+}
+
+
+
+svg {
+	
+  font-family: "Akaya Kanadaka", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  height: 100%;
+  width: 100%;
+}
+
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 5;
+	stroke: #5B7338;
+  font-size: 100px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(91,115,56,0); stroke: rgba(91,115,56,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(91,115,56,0); stroke: rgba(91,115,56,1); }
+	80%  {fill: rgba(91,115,56,0); stroke: rgba(91,115,56,1); stroke-width: 3; }
+	100% {
+		fill: rgba(91,115,56,1); stroke: rgba(91,115,56,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+
+
+
+#grid nav {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-color: rgba(100,54,212,1.00);
+    display: grid;
+    grid-template-columns: 80vh repeat(4,1fr);
+    position: sticky;
+	top: 0;
+	background-image:url("../img/papel2.jpg");
+	background-size: cover;
+	background-position:top;
+	background-repeat: no-repeat;
+}
+
+.textonav {
+    color: #607345;
+    text-align: center;
+    text-decoration: none;
+    line-height: 5vh;
+	font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+#grid main {
+    grid-column: 1/2;
+    grid-row: 3/4;
+	background-image:url("../img/name.jpg");
+	background-size:cover;
+	background-position:top;
+	background-repeat: no-repeat;
+    
+}
+
+#textomain{
+    color: #607345;
+    text-align: center;
+    text-decoration: none;
+    line-height: 4vh;
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-left: 17vw;
+    padding-right: 13vw;
+    padding-top: 27vh;
+    padding-bottom: 3vh;
+}
+
+
+#grid aside {
+    grid-column: 2/3;
+    grid-row: 3/4;
+   background-image:url("../img/said.jpg");
+	display: flex;
+    flex-direction: column; 
+	justify-content: center;
+}
+
+
+#cuadrado1{
+   
+	width: 100%;
+	height: 33.4%;
+	background-image: url("../img/1.png");
+	background-size:contain;
+	background-position:center;
+	background-repeat: no-repeat;
+	
+
+}
+
+#cuadrado1:hover{
+	
+	background-image: url("../img/primavera.gif");
+	background-size:contain;
+	background-position:center;
+	background-repeat: no-repeat;
+
+}
+
+
+.c{
+    color: #607345;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 100%;
+	width: 100%;
+    padding-top: 18.5vh;
+    padding-bottom: 1vh;
+  
+}
+#cuadrado2{
+   
+	width: 100%;
+	height: 33.2%;
+	background-image:url("../img/3.png");
+	background-size:contain;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+
+#cuadrado3{
+   
+	width: 100%;
+	height: 33.4%;
+	background-image:url("../img/2.png");
+	background-size:contain;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+
+#seccion1 {
+	grid-column: 1/3;
+	grid-row: 4/5;
+	display: flex;
+	flex-direction: row;
+}
+
+.fila {
+    display: flex;
+	flex-direction: column;
+    justify-content:space-around;
+	background-size:cover;
+	background-position:right;
+	background-repeat: no-repeat;	
+	width: 33.4%;
+	height: 100%;
+	gap: 10px; 
+	align-items: center;
+}
+
+
+#semicuadrado {
+    width: 90%;
+    height: 50%;
+    flex-direction: row;
+    margin-top: 10px;
+    border-radius: 15px 130px;
+	background-image: url("../img/flore.png");
+	background-size:cover;
+	background-position:top;
+	background-repeat: no-repeat;
+
+}
+
+#semicuadrado:hover{
+	
+	
+	background-image:url("../img/flore1.png");
+	background-size:cover;
+	background-position:top;
+	background-repeat: no-repeat;
+}
+
+#semicuadrado2 {
+    width: 90%;
+    height: 50%;
+    flex-direction: row;
+    border-radius: 130px 15px;
+    margin-bottom: 10px;
+    background-image: url("../img/abajp.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5.5vw;
+    padding-top: 3vh;
+    padding-right: 4.5vw;
+    padding-bottom: 1vh;
+}
+#primavera {
+    color: #E24A71;
+    text-decoration: none;
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5vh;
+    text-align: center;
+}
+
+
+
+
+.fila2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 33.4%;
+    height: 100%;
+    gap: 10%;
+    background-image:url("../img/seccion2.png");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;	
+}
+
+
+#rec{
+    width: 25%;
+    height: 30%;
+    flex-direction: row;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    background-color: rgba(186,206,132,0.60);
+	}
+#rec:hover{
+	background-image: url("../img/fjk.png");
+	background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+#rec2{
+    width: 25%;
+    height: 30%;
+    flex-direction: row;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    background-color: rgba(186,206,132,0.60);
+}
+#rec2:hover{
+	background-image:url("../img/hu.png");
+	background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+#rec3{
+    width: 25%;
+    height: 30%;
+    flex-direction: row;
+    border-radius: 50px;
+    margin-bottom: 10px;
+	background-color: rgba(186,206,132,0.60);
+}
+
+#rec3:hover{
+	background-image:url("../img/aaih.png");
+	background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fila3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33.5%;
+    height: 100%;
+    gap: 10px;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#otrolado {
+    width: 90%;
+    height: 50%;
+    flex-direction: row;
+    margin-top: 10px;
+    border-radius: 130px 15px;
+	background-image:url("../img/abajom.png");
+	background-size:cover;
+	background-position:top;
+	background-repeat: no-repeat;
+	 display: flex;
+    justify-content: center;
+    align-items:center;
+	flex-direction: column;
+    padding-left: 6vw;
+    padding-top: 3vh;
+    padding-right: 5vw;
+    padding-bottom: 1vh;
+}
+#titulop {
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 6vh;
+    color: #8B3DC3;
+}
+#textop {
+	color: #8b3dc3;
+    text-decoration: none;
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5vh;
+    text-align: center;
+}
+
+
+
+#otrolado2 {
+    width: 90%;
+    height: 50%;
+    flex-direction: row;
+    border-radius: 15px 130px;
+    background-image: url("../img/floremora.png");
+    margin-bottom: 10px;
+	background-size:cover;
+	background-position:top;
+	background-repeat: no-repeat;
+}
+
+#otrolado2:hover{
+	
+	background-image: url("../img/floremora2.png");
+	background-size:cover;
+	background-position:top;
+	background-repeat: no-repeat;
+}
+
+
+#seccion2 {
+	
+	grid-column: 1/3;
+	grid-row: 5/6;
+	background-size:cover;
+	background-position:right;
+	background-repeat: no-repeat;
+}
+
+#cont2{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	background-image: url("../img/fondootoño.png");
+	background-position: bottom;
+	background-size:cover;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+}
+#medio{
+	width: 70%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	padding-top: 20px;
+}
+#imgsec2{
+	width: 100%;
+	flex: 1.5;
+	background-image: url("../img/otoño.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#imgsec2:hover{
+	background-image:url("../img/gifotoño.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#abajosec2{
+	width: 100%;
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	padding-top: 15px;
+}
+.titsec2{
+	color: #8E331A;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-size: 35px;
+}
+.psec2{
+	color: #8E331A;
+    text-align: center;
+    font-family: "Pangolin", cursive;
+	font-size: 16px;
+}
+.txtsec2{
+	flex: 1;
+	height: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+
+#seccion3 {
+	grid-column: 1/3;
+	grid-row: 6/7;
+	background-size:cover;
+	background-position:right;
+	background-repeat: no-repeat;
+}
+#contenedorsec3{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+	background-image: url("../img/fodosec3.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+#sec3izq{
+	flex: 2;
+	width: 100%;
+}
+#sec3der{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	width: 70%;
+}
+#titdere{
+	flex: 1;
+	width: 100%;
+}
+#tit{
+	color: #5155A2;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-size: 60px;
+}
+#psec3{
+	flex:2;
+	width: 100%;
+	padding-bottom: 15px;
+	padding-top: 5px;
+}
+#parr{
+	color: #5155A2;
+    text-align: center;
+    font-family: "Pangolin", cursive;
+	font-size: 20px;
+  
+}
+.banner{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.banner .slider{
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    top: 15%;
+    left: calc(50% - 75px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
+    z-index: 2;
+}
+@keyframes autoRun{
+    from{
+        transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
+    }to{
+        transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
+    }
+}
+
+.banner .slider .item{
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: 
+        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+        translateZ(400px);
+}
+.banner .slider .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner .content{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1400px, 100vw);
+    height: max-content;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+#grid footer {
+    grid-column: 1/3;
+    grid-row: 7/8;
+    text-align: center;
+    padding: 8px;
+	display: flex;
+	flex-direction: row;
+	gap:45vh;
+	padding-left: 30vh;
+	padding-right: 10vh;
+}
+#grid footer a {
+	color: #8b3dc3;
+    text-decoration: none;
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vh;
+    text-align: center;
+	
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:770px){
+	
+	#contenedor {
+	width: 100vw;
+	}
+	#grid{
+    
+    grid-template-columns: 3fr ;
+    grid-template-rows: 1fr 5vh 4fr 2fr 4fr 4fr 4fr 10vh;
+	
+}
+#grid header {
+  
+    grid-column: 1/2;
+    
+}
+#grid nav {
+	
+    grid-column: 1/2; 
+	grid-row: 2/3;
+    grid-template-columns: 10vh repeat(4,1fr);
+   
+}
+
+#grid main {
+    grid-column: 1/2;
+}
+#grid aside {
+    grid-column: 1/3;
+    grid-row: 4/5;
+	flex-direction: row;
+   
+}
+
+
+#cuadrado1{
+	width: 33.4%;
+	height: 100%;
+}
+
+#cuadrado2{
+    
+	width: 33.4%;
+	height: 100%;
+}
+
+#cuadrado3{
+  
+	width: 33.4%;
+	height: 100%;
+}
+
+#seccion1 {
+	
+	grid-column: 1/2;
+	grid-row: 5/6;
+	display: flex;
+	align-content: center;
+	flex-direction: row;
+}
+	
+
+
+.fila {
+    display: flex;
+	flex-direction: column;
+    justify-content:center;
+	
+}
+
+
+#semicuadrado {
+    width: 90%;
+    height: 50%;
+    flex-direction: row;
+    margin-top: 10px;
+    border-radius: 15px 130px;
+	background-image: url("../img/flore.png");
+	background-size:contain;
+	background-position:center;
+	background-repeat: no-repeat;
+
+}
+
+#semicuadrado:hover{
+	
+	
+	background-image:url("../img/flore1.png");
+	background-size:cover;
+	background-position:top;
+	background-repeat: no-repeat;
+}
+
+#semicuadrado2 {
+    width: 90%;
+    height: 50%;
+    flex-direction: row;
+    border-radius: 130px 15px;
+    margin-bottom: 10px;
+    background-image: url("../img/abajp.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5.5vw;
+    padding-top: 3vh;
+    padding-right: 4.5vw;
+    padding-bottom: 1vh;
+}
+#primavera {
+    color: #E24A71;
+    text-decoration: none;
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5vh;
+    text-align: center;
+}
+
+
+
+
+.fila2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 33.4%;
+    height: 100%;
+    gap: 10%;
+    background-image:url("../img/seccion2.png");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;	
+}
+
+
+#rec{
+    width: 25%;
+    height: 30%;
+    flex-direction: row;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    background-color: rgba(186,206,132,0.60);
+	}
+#rec:hover{
+	background-image: url("../img/fjk.png");
+	background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+#rec2{
+    width: 25%;
+    height: 30%;
+    flex-direction: row;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    background-color: rgba(186,206,132,0.60);
+}
+#rec2:hover{
+	background-image:url("../img/hu.png");
+	background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+#rec3{
+    width: 25%;
+    height: 30%;
+    flex-direction: row;
+    border-radius: 50px;
+    margin-bottom: 10px;
+	background-color: rgba(186,206,132,0.60);
+}
+
+#rec3:hover{
+	background-image:url("../img/aaih.png");
+	background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fila3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33.5%;
+    height: 100%;
+    gap: 10px;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#otrolado {
+    width: 90%;
+    height: 50%;
+    flex-direction: row;
+    margin-top: 10px;
+    border-radius: 130px 15px;
+	background-image:url("../img/abajom.png");
+	background-size:cover;
+	background-position:top;
+	background-repeat: no-repeat;
+	 display: flex;
+    justify-content: center;
+    align-items:center;
+	flex-direction: column;
+    padding-left: 6vw;
+    padding-top: 3vh;
+    padding-right: 5vw;
+    padding-bottom: 1vh;
+}
+#titulop {
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 6vh;
+    color: #8B3DC3;
+}
+#textop {
+	color: #8b3dc3;
+    text-decoration: none;
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5vh;
+    text-align: center;
+}
+
+
+
+#otrolado2 {
+    width: 90%;
+    height: 50%;
+    flex-direction: row;
+    border-radius: 15px 130px;
+    background-image: url("../img/floremora.png");
+    margin-bottom: 10px;
+	background-size:cover;
+	background-position:top;
+	background-repeat: no-repeat;
+}
+
+#otrolado2:hover{
+	
+	background-image: url("../img/floremora2.png");
+	background-size:cover;
+	background-position:top;
+	background-repeat: no-repeat;
+}
+
+
+#seccion2 {
+	
+	grid-column: 1/2;
+	grid-row: 6/7;
+}
+	#imgsec2{
+	width: 100%;
+	flex: 2;
+	background-image: url("../img/otoño.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#imgsec2:hover{
+	background-image:url("../img/gifotoño.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.titsec2{
+	color: #8E331A;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-size: 20px;
+}
+.psec2{
+	color: #8E331A;
+    text-align: center;
+    font-family: "Pangolin", cursive;
+	font-size: 10px;
+}
+
+#seccion3 {
+   	
+	grid-column: 1/2;
+	grid-row: 7/8;
+}
+	.banner .slider{
+        width: 160px;
+        height: 200px;
+        left: calc(50% - 80px);
+    }
+    .banner .slider .item{
+        transform: 
+            rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(300px);
+    }
+	
+#grid footer {
+    grid-column: 1/2;
+    grid-row: 8/9;
+
+}
+	
+
+
+
+@media (max-width:500px){
+	
+	
+	#grid{
+    
+    grid-template-columns: 3fr ;
+    grid-template-rows: 1fr 5vh 4fr 2fr 2fr 2fr 3fr 4fr 4fr 10vh;
+	
+}
+
+#grid nav {
+	
+    grid-template-columns: 2vh repeat(4,1fr);
+   
+}
+
+#grid aside {
+    grid-column: 1/2;
+    grid-row: 4/7;
+	flex-direction: column;
+   
+}
+
+
+#cuadrado1{
+	width: 100%;
+	height: 33.4%;
+}
+
+#cuadrado2{
+    
+	width: 100%;
+	height: 33.4%;
+	
+}
+
+#cuadrado3{
+  
+	width: 100%;
+	height: 33.4%;
+}
+
+#seccion1 {
+	
+	grid-column: 1/2;
+	grid-row: 7/8;
+}
+
+
+#seccion2 {
+	
+	grid-column: 1/2;
+	grid-row: 8/9;
+}
+.titsec2{
+	color: #8E331A;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-size: 18px;
+}
+.psec2{
+	color: #8E331A;
+    text-align: center;
+    font-family: "Pangolin", cursive;
+	font-size: 8px;
+}
+
+#seccion3 {
+   	
+	grid-column: 1/2;
+	grid-row: 9/10;
+}
+	
+	.banner .slider{
+        width: 100px;
+        height: 95px;
+        left: calc(50% - 50px);
+    }
+    .banner .slider .item{
+        transform: 
+            rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(180px);
+    }
+	
+#grid footer {
+    grid-column: 1/2;
+    grid-row: 10/11;
+
+}
+	
+}
+#grid footer a {
+}
